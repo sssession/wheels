@@ -1,0 +1,26 @@
+{
+  "name": "UI-backend",
+  "version": "0.0.0",
+  "authors": [
+    "Session <sssession@homail.com>"
+  ],
+  "description": "UI template similar to http://themeforest.net/item/moon-light-admin/4629193?ref=designmag with ReactJs",
+  "main": "index.html",
+  "keywords": [
+    "UI",
+    "template"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "react": "~0.13.3",
+    "requirejs": "~2.1.18"
+  }
+}
