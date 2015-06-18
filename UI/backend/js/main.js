@@ -5,6 +5,14 @@ require.config({
     }
 });
 
-require([], function () {
-    return {};
+require([
+    'jquery',
+    'react',
+    'component/layout'
+], function ($, React, layout) {
+    var $div = $('<div>');
+
+    React.render(React.createElement(layout), $div[0]);
+
+    $('body').prepend($div.children());
 });

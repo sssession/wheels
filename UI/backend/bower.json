@@ -22,5 +22,8 @@
     "jquery": "~2.1.4",
     "react": "~0.13.3",
     "requirejs": "~2.1.18"
+  },
+    "devDependencies": {
+        "less": "~2.5.1"
   }
 }
