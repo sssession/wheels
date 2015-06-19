@@ -1,6 +1,8 @@
 define([
-    'react'
-], function (React) {
+    'react',
+    'component/breadNav',
+    'component/breadNavItem'
+], function (React, BreadNav, NavItem) {
     return React.createClass({
         render: function () {
             return (
@@ -27,16 +29,10 @@ define([
                             </li>
                         </ul>
                         <div className="main">
-                            <nav>
-                                <ul>
-                                    <li className="active">
-                                        <a href="#">
-                                            <i className="fa fa-home"></i>
-                                            Dashboard</a>
-                                    </li>
-                                    <li>Reports</li>
-                                </ul>
-                            </nav>
+                            <BreadNav>
+                                <NavItem active={true} icon="home">Dashboard</NavItem>
+                                <NavItem>Reports</NavItem>
+                            </BreadNav>
                         </div>
                     </div>
                     <footer>
